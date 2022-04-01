@@ -10,6 +10,7 @@ using std::sort;
 
 
 std::int64_t LocToDec(std::string const & loc){
+    // Changes from "abcde" format to numeric format
     std::string alphabet = "abcdefghijklmnopqrstuvwxyz";
     int alphlen = static_cast<int>(alphabet.size());
     int wordlen = static_cast<int>(loc.size());
@@ -27,6 +28,7 @@ std::int64_t LocToDec(std::string const & loc){
 
 
 std::string Abbreviate(std::string const & loc){
+    // Changes from numeric format to abbreviated alphabetic format.
     int wordlen = static_cast<int>(loc.size());
     std::string newnum = "";
     int i = 0;
